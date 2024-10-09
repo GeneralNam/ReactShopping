@@ -1,0 +1,42 @@
+/* SimpleBar 기본 스타일 유지 */
+
+/* SimpleBar 썸(thumb) 스타일링 */
+.simplebar-scrollbar::before {
+    background: #888;
+    border-radius: 50px; /* 썸을 더 동그랗게 만듦 */
+  }
+  
+  .simplebar-track.simplebar-vertical {
+    width: 12px;
+    background: #f1f1f1;
+    border-radius: 6px;
+  }
+  
+  .simplebar-scrollbar.simplebar-visible::before {
+    width: 12px;
+    border-radius: 50px; /* 썸을 더 동그랗게 만듦 */
+  }
+  
+  /* 호버 시 썸 색상 변경 */
+  .simplebar-scrollbar:hover::before {
+    background: #555;
+  }
+  
+  /* 반응형 디자인 */
+  @media (max-width: 768px) {
+    .modal-content {
+      flex-direction: column;
+    }
+  
+    .image-container {
+      width: 100% !important;
+      padding-right: 0 !important;
+      padding-bottom: 20px !important;
+    }
+  
+    .details-container {
+      width: 100% !important;
+      padding-left: 0 !important;
+    }
+  }
+  
